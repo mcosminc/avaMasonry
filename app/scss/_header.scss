@@ -1,0 +1,55 @@
+
+.header {
+    font-size: $font-sm;
+    padding: 20px;
+
+    
+    &__logo {
+        width: 70px;
+        height: 60px;
+        background-color: red;
+    }
+
+    &__menu {
+        >span{
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $gold;
+            border-radius: 20px;
+
+            &:not(:last-child) {
+            margin-bottom: 6px;
+            }
+        }
+    }
+
+
+    &__links {
+
+        >a:hover{
+            transition: 0.5s ease-in-out;
+            color: $light-gold;
+        }
+        
+        >a:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    &__button {
+
+        padding: 20px 0;
+
+        >a {
+            background-color: $grey;
+            background: rgb(0,0,0);
+            background: linear-gradient(170deg, $black 10%, $grey 50%, $black 100%);
+            color: $light-gold;
+            padding:25px 20px;
+            border-radius: 50px;
+            
+        }
+    }
+
+}
