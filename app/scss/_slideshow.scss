@@ -1,0 +1,34 @@
+.space {
+    position: flex;
+    top: 0;
+    width:100%;
+    height:calc(100% - 100px);
+}
+
+.slideshow {
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -10;
+    width:100vw;
+    height:100vh;
+    background-image: url("../../media/images/house1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(1);
+}
+
+.color{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: -9;
+    width:100vw;
+    height:100vh;
+    background-color: black;
+    opacity: 0.3;
+}
+
+
+
