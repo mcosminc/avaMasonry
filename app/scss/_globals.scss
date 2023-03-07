@@ -46,11 +46,11 @@ a, a:visited, a:hover {
 //hide
 
 .hide-for-mobile {
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(small) {
         display: none;
     }
 }
-/* will work later on this. (problem because of flex-ai-sb)
+
  .hide-for-tablet {
     @include breakpoint-down(medium) {
         display: none;
@@ -59,7 +59,7 @@ a, a:visited, a:hover {
     }
 
     
-} */
+}
 
 
 .hide-for-desktop {
