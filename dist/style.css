@@ -38,22 +38,18 @@ a, a:visited, a:hover {
   align-items: center;
 }
 
-@media (max-width: 64em) {
+@media (max-width: 40em) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-/* will work later on this. (problem because of flex-ai-sb)
- .hide-for-tablet {
-    @include breakpoint-down(medium) {
-        display: none;
+@media (max-width: 64em) {
+  .hide-for-tablet {
+    display: none;
+  }
+}
 
-
-    }
-
-
-} */
 @media (min-width: 64em) {
   .hide-for-desktop {
     display: none;
@@ -75,9 +71,20 @@ a, a:visited, a:hover {
   height: 0.125rem;
   background-color: #FFDF00;
   border-radius: 1rem;
+  transition: all 0.5s;
+  transform-origin: 2px 1px;
 }
 .header__menu > span:not(:last-child) {
   margin-bottom: 0.375rem;
+}
+.header__menu.open > span:first-child {
+  transform: rotate(45deg);
+}
+.header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+.header__menu.open > span:last-child {
+  transform: rotate(-45deg);
 }
 .header__links a {
   position: relative;
@@ -114,6 +121,13 @@ a, a:visited, a:hover {
   padding: 1.5625rem 1.25rem;
   border-radius: 3.125rem;
 }
+.header .menu-btn {
+  display: inline-flex;
+  align-items: center;
+}
+.header .menu-btn .header__menu {
+  margin-left: 1.25rem;
+}
 
 .space {
   position: flex;
@@ -144,5 +158,5 @@ a, a:visited, a:hover {
   width: 100vw;
   height: 100vh;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0.15;
 }/*# sourceMappingURL=style.css.map */
