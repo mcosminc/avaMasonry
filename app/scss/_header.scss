@@ -3,7 +3,9 @@
     font-size: $font-sm;
     padding: 1.25rem;
 
-
+    &__logo, &__button  {
+        z-index: 100;
+    }
     
     &__logo {
 
@@ -28,6 +30,12 @@
         }
 
         &.open {
+
+            .overlay {
+                display: block;
+                animation: fade-in 300ms ease-in-out forwards;
+            }
+
             >span:first-child {
                 transform: rotate(45deg);
             }
@@ -56,12 +64,12 @@
             &::before{
                 content: "";
                 display: block;
-                height: 0.3125rem;
+                height: 0.2125rem;
                 position: absolute;
                 border-radius: 1.25rem;
                 left: 0;
                 right: 0;
-                bottom: -1.875rem;
+                bottom: -1.575rem;
                 transition: 250ms ease-in-out;
             }
 
@@ -102,6 +110,7 @@
     }
 
     .menu-btn {
+        z-index: 100;
         display: inline-flex;
         align-items: center;
 
@@ -111,4 +120,16 @@
 
 
     }
+}
+
+.overlay {
+    opacity: 0;
+    background-color: $grey;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    
 }

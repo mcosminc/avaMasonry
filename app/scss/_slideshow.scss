@@ -9,26 +9,16 @@
     position: absolute;
     top:0;
     right: 0;
-    z-index: -10;
+    z-index: -1;
     width:100vw;
     height:100vh;
-    background-image: url("../../media/images/house1.jpg");
+    background-image: url("../../media/img/house1.jpg.");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: opacity(1);
 }
 
-.color{
-    position: absolute;
-    top:0;
-    right: 0;
-    z-index: -9;
-    width:100vw;
-    height:100vh;
-    background-color: black;
-    opacity: 0.15;
-}
 
 
 
